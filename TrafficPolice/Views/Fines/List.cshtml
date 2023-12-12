@@ -1,0 +1,28 @@
+@using TrafficPolice.Models;
+@model IEnumerable<FineModel>;
+
+@{
+    ViewData["Title"] = "Fines Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Fines</h1>
+    <br>
+
+    <div>
+        @{
+            foreach (var fine in Model)
+            {
+                <div>
+                    <h2>
+                        <h2>Fine Name : @fine.Name</h2>
+                        <p>Descriprion : @fine.Description</p>
+                        <p>Price : @fine.Price.ToString()</p>
+                        <p>Categpry : @fine.category</p>
+                        <p>Paid : @fine.isPaid</p>
+                    </h2>
+                </div>
+            }
+        }
+    </div>
+</div>
