@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficPolice", "TrafficPolice\TrafficPolice.csproj", "{23E4BE99-7972-4985-B882-39833A895FC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutozMVC", "AutozMVC.csproj", "{FD0C6330-E849-4BC7-A049-6C01C59D0074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23E4BE99-7972-4985-B882-39833A895FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23E4BE99-7972-4985-B882-39833A895FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23E4BE99-7972-4985-B882-39833A895FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23E4BE99-7972-4985-B882-39833A895FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0C6330-E849-4BC7-A049-6C01C59D0074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0C6330-E849-4BC7-A049-6C01C59D0074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0C6330-E849-4BC7-A049-6C01C59D0074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0C6330-E849-4BC7-A049-6C01C59D0074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {84D37D7D-0AD2-421A-B396-DFE96AF7405C}
+		SolutionGuid = {E5B3E273-EE01-464F-B716-877FC97E4A9D}
 	EndGlobalSection
 EndGlobal

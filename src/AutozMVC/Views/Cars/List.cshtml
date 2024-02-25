@@ -1,0 +1,17 @@
+@using AutozMVC.ViewModel;
+@model CarsListViewModel;
+@{
+    Layout = "_Layout";
+}
+
+<h1>All Cars</h1>
+<h2>@Model.carCategory</h2>
+@{
+    foreach(var car in Model.AllCars) {
+        <div>
+            <h3>Name : @car.Name</h3>
+            <p>Model : @car.Model</p>
+            <p>Price : @car.Price.ToString("c")</p>
+        </div>
+    }
+}
