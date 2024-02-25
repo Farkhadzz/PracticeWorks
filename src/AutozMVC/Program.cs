@@ -1,11 +1,16 @@
-using AutozMVC.Data.Interfaces;
-using AutozMVC.Data.Mocks;
+using AutozMVC.Data.Database;
+using AutozMVC.Data.Repositories.Base;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+string connectionStringName = "AutozDb";
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IAllCars, CarMock>();
-builder.Services.AddTransient<IAllCategories, CategoryMock>();
+builder.Services.AddTransient<ICarRepository, CarRepository>();
+builder.Services.AddDbContext<AppDbContext>(options => {
+    var connectionString = builder.Configuration.GetConnectionString(connectionStringName);
+    options.UseSqlServer(connectionString);
+});
 
 
 var app = builder.Build();

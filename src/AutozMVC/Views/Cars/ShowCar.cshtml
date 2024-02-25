@@ -1,0 +1,31 @@
+@model List<AutozMVC.Models.Car>
+@{
+    ViewData["Title"] = "All Cars";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Cars</h2>
+
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="@car.Img" alt="@car.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@car.Name</h5>
+                    <p class="card-text">@car.ShortDesc</p>
+                    <p class="card-text">@car.LongDesc</p>
+                    <p class="card-text">@car.Price$</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#carDetailsModal-@car.Id">Details</button>
+                    <div class="modal" id="carDetailsModal-@car.Id">
+                        @{
+                            await Html.RenderPartialAsync("_CarDetailsPartial", car);
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
